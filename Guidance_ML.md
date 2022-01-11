@@ -75,6 +75,7 @@
 * Scatter plot between response variable and each individual feature.
 * Linear regression line along with the training dataset that is used to make predictions on the test dataset.
 * Fitted values vs residuals
+* **Residual Plots** --> Residuals vs predictors (xi)
 * For classification problem, use different colors for different classes.
 * Plot a heatmap from seaborn library.
     * Could be for plotting correlation matrix.

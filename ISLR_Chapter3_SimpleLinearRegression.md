@@ -60,8 +60,41 @@
 * If a qualitative predictor only has two lecels, or possible values, then incorporating it into a regression model is very simple. 
 * We create an indicator or dummy variable that takes on two possible numerical values.
 * The level with no dummy variable is known as the **baseline.**
-* Two of the most important assumptions made by linear model states tha the relationship between predictors and response are additive and linear.
+* Two of the most **important assumptions made by linear model** states tha the relationship between predictors and response are additive and linear.
 * **Synergy or interaction effect**
 * Extending linear model to include interaction terms (these are the terms obtained from multipying two or more features)
 * The hierarchial principle states that if we include an interaction in a model, we should also include the main effects, even if the p-values associated with their coefficients are not significant.
 * Note that concept of interaction term applied to qualitative variables as well as to the combination of qualitative and quantitative variables.
+* Residual Plots are residuals vs predictors plot and are used for identifying non-linearity.
+* Residual plot will show no discernible pattern.
+* An **important assumption of the linear regression** model is that the error terms are uncorrelated.
+* However, if they are correlated, we may have an unwarranted sense of confidence in our model.
+* Correlation between error terms may occur in the context of time series data, which consistes of observations for which measurements are obtained at discrete points in time.
+* Another **important assumtion** is that the error terms have a constance variance.
+* Once can identify non-constant variances in the errors or heteroscedasticity, from the presence of a funnel shape in the residual plot.
+* Outlier
+    * It is a point for which y is far from the value predicted by the model.
+    * Residual Plots can be used to identify outliers.
+    * But in practice, it is difficult to decide how large a residual needs to be before we consider the point to be an outlier.
+    * This can be solved by plotting studentized residuals instead of residuals in residual plots.
+    * Studentized residuals are computed by dividing each residual by its estimated SE.
+    * Obs. whose abs(studentized residuals) are greater than 3 in absolute value are possible outliers.
+* Leverage Points
+    * Observations with high leverage points have an unusual value for xi.
+    * Removing the high leverage observation has a much more substantial impact on the least squares line than removing the outlier.
+    * Leverage points are important becuase it is possible that these points heavily affect least squares line becuase any problems with these points may invalidate the entire fit.
+    * To identify leverage points, we can simply look for observations for which the predictor value is outside of the normal range of obs.
+    * We can use levarage statistics a large value of which is called leverage statistics.
+    * Range is [1/n, 1] and the average leverage for all observations alwasy equals (p+1)/n.
+    * So if the leverage stat of observation is higher then this, consider it for high leverage point.
+* Collinearity
+    * The presence of collinearity can pose problems in the regression context, since it can be difficult to separate out the individual effects of collinear variables on the response.
+    * Correlation can give an idea about collinearity between pair of features.
+    * To asses multicollinearity (i.e collinearity between more than 2 features), use **variance inflation factor (VIF)**.
+    * VIF is the ratio of the variance of betaj when fitting full model divided by the variance of betaj if fit on its own.
+    * VIF = 1 implies complete absense of colliearity.
+    * If VIF exeeds 5 or 10, then there is a problem in predictors.
+    * Solutions
+        * Drop one of the problematic variables.
+        * Combine the collinear variables together into a single predictor.
+* [Lab Kaggle Notebook]()
