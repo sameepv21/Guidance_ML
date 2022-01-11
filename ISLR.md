@@ -42,4 +42,6 @@
     * Choice of 'K' is crucial.
     * K = 1 --> Overly flexible and overfits the data, low bias and high variance.
     * As K increases, high bias and low variance.
-* [Lab (Kaggle Notebook)](https://www.kaggle.com/sameepvani/chapter2-islr-statisticallearning) 
+* Extra Points
+    * When 'n' is large and 'p' is small and when the relation between response and feature is non-linear then flexible methods will perform better.
+* [Lab (Kaggle Notebook)](https://www.kaggle.com/sameepvani/chapter2-islr-statisticallearning)
