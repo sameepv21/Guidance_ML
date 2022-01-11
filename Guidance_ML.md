@@ -182,6 +182,7 @@
 * [XGBoost](https://www.kaggle.com/prashant111/xgboost-k-fold-cv-feature-importance)
 * [Tuning hyperparameter XGBoost](https://www.kaggle.com/prashant111/a-guide-on-xgboost-hyperparameters-tuning)
 * [Guidance (House Price Prediction)](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python/notebook)
+* [Full Guide on Data Science]()
 
 # Feature Engineering
 * It is the process of selecting, manipulating and transforming raw data into features that can be used in supervised learning.

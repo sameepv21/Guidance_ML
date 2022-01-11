@@ -86,4 +86,30 @@
     * When there is no relationship between the response and predictors, one would expect the F-statistic to take on the value close to 1 and if there is a relationship then value of F-statistic will be > 1.
     * If we use individual t-stats and associated p-values in order to decide whether or not there is an association between the variables and the reponse then there is a high chance that we will incorrectly conclude the relationship.
     * F-stat does not suffer from this because it adjusts for the number of predictors.
-    * 
+* The task of determining which predictors are associated with the response, in order to fit a single model involving only those predictors is referred to as variable selection.
+* Various statistics that help in variable selection are Mallow's Cp, AIC, BIC and adjusted R2.
+* But there may be 2^p models and there is no computational power.
+* Forward Selection
+    * Begin with a null model i.e a model with intercept but no predictors.
+    * Then fit p simple linear regressions and all to the null model the variable that results in the lower RSS.
+    * Then cont. with this until some stopping rule is satisfied.
+* Backward Selection
+    * Begin with all variables in the model and remove the variable with the largest p-value i.e variable with the least significance.
+    * Again reiterate untill some stopping rule is satisfied.
+    * Can't be used if p > n.
+* Mixed Selection
+    * Combination of forward and backward.
+    * Start with no variables in the mode, and add variable that provides the best fit.
+    * Now, as we increase the variables, p-value for variables is going to increase and if it exceeds certain threshold then we remove that variable from the model.
+* R2 will always increase when more variables are added to the model even if those variables are only wekaly associated with the response.
+* Prediction intervals are always wider than confidence intervals because they incorporate both the error in the estimate for f (the reducible and irreducible).
+* Confidence interval is used to quantify the uncertainty surrouding the average whereas prediction interval is used to quantify the uncertainty surrouding a particular feature.
+* We also need to incorporate a qualitative predictor (also known as a factor).
+* If a qualitative predictor only has two lecels, or possible values, then incorporating it into a regression model is very simple. 
+* We create an indicator or dummy variable that takes on two possible numerical values.
+* The level with no dummy variable is known as the **baseline.**
+* Two of the most important assumptions made by linear model states tha the relationship between predictors and response are additive and linear.
+* **Synergy or interaction effect**
+* Extending linear model to include interaction terms (these are the terms obtained from multipying two or more features)
+* The hierarchial principle states that if we include an interaction in a model, we should also include the main effects, even if the p-values associated with their coefficients are not significant.
+* Note that concept of interaction term applied to qualitative variables as well as to the combination of qualitative and quantitative variables.
