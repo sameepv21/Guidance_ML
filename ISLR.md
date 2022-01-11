@@ -45,3 +45,45 @@
 * Extra Points
     * When 'n' is large and 'p' is small and when the relation between response and feature is non-linear then flexible methods will perform better.
 * [Lab (Kaggle Notebook)](https://www.kaggle.com/sameepvani/chapter2-islr-statisticallearning)
+
+# Simple Linear Regression
+* Introduction
+    * beta0 and beta1 are intercept and slope respectively in terms of linear model.
+    * Can also be understood as expected value of Y when X=0 is beta0 and average increase in Y associeated with a one unit increase in X is beta1.
+    * Together called as coefficients or paramters.
+    * Interested in estimating yhat (predicted value).
+* Estimating the coefficients
+    * Most common approach involves minimizing the least squared criterion.
+    * Residual e = y - yhat.
+    * RSS = sum(e)
+* Assessing the **accuracy of coefficient estimates**
+    * Error term is generally generated from a normal distribution with mean zero.
+    * Standard Error tells us the amount that this estimate "mean" differes from the actual value.
+    * Estimate of **sigma = SD(Error term)** is known as **RSE** = sqrt(RSS / (n-2))
+    * Std Error can be used to compute confidence intervals.
+    * 95% confidence interval is defined as a range of values such that with 95% probability, the range will contain the true unkown value of the parameter.
+    * Std Errors can be used to perform hypothesis tests on the coefficients.
+    * Most common is null hypothesis.
+    * To infer about null hypothesis, we compute t-statistics which measures the number of std dev that beta1 is away from 0.
+    * Prob. of observing any number >= mod(t) assuming null hypothesis is true is called p-value.
+    * It can be interpreted as follow, small p-value indicates that it is unlikely to observe such a substantial association between the predictor and response and hence there is an association between the predictor and response.
+* Assessing the **accuracy of model**
+    * Use RSE and R2.
+    * RSE is estimate of sigma = SD(Error Term).
+    * RSE is measure of lack of fit. If RSE is small, model fits the data well and vice versa.
+    * R2 takes the form of proportion, the proportion of variance.
+    * Ranges from [0, 1].
+    * R2 = 1 - (RSS / TSS)
+    * TSS = sum(yhat - mean(y)^2) = Total sum of squares. It measures total variance in Y.
+    * RSS measures the amount of variability that is left unexplained after performing the regression.
+    * R2 close to 1 indicates that a large proportion of variability in the response is explained by regression and hence is a good model and vice versa.
+* Multiple Linear Regression
+    * Y = beta0 + beta1*X1 + ...
+    * betaj can be interpreted as the average effect on Y of a one unit increase in Xj, holding all other predictors fixed.
+* Estimating the regression coefficients
+    * F-statistics --> F = (TSS - RSS)/p/RSS/(n - p -1)
+    * E{RSS / (n-p-1)} = sigma^2. Iff linear model assumption is correct.
+    * When there is no relationship between the response and predictors, one would expect the F-statistic to take on the value close to 1 and if there is a relationship then value of F-statistic will be > 1.
+    * If we use individual t-stats and associated p-values in order to decide whether or not there is an association between the variables and the reponse then there is a high chance that we will incorrectly conclude the relationship.
+    * F-stat does not suffer from this because it adjusts for the number of predictors.
+    * 
