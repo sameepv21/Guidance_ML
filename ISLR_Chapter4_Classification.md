@@ -92,4 +92,4 @@
 * This means that eta(E(Y | X1 .... Xn)) = beta0 + beta1\*X1 + ... + betap\*Xp
 * In general, we can perform a regression by modeling the response Y as coming from a particular member of the exponential family (Bernaulli, Gaussian and Poisson), and then transforming the mean of the response so that the transformed mean is a linear function of predictors.
 * Any regression that follows this general approach is called generalized linear model (GLM).
-* [Lab Kaggle Notebook]()
+* [Lab Kaggle Notebook](https://www.kaggle.com/sameepvani/chapter4-islr-classification)
