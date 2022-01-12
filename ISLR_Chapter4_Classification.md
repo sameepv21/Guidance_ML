@@ -54,3 +54,42 @@
         * The closer it is to 1, the better it is said to be i.e it hug the top-left corner
         * AUC (Area Under Curve) is actually the correct measure for performance.
         * Hence, it is said that more closer it is to 1, more area it will cover.
+* Quadratic Discriminant Analysis (QDA)
+    * QDA also **assumes** that the observations are drawn from a Gaussian distribution.
+    * It also **assumes** that each class has its own covariance matrix unlike LDA where there is a shared covariance.
+    * Now, the equation of discriminant changes and bayes classifier assigns the obs to the class for which this equation is the largest.
+    * However, unlike LDA, the x is now a quadratic function.
+    * Why prefer QDA to LDA and vice versa?
+        * LDA is prefered because it assumes a shared covariance matrix which decreases the load on CPU.
+        * However, it is less flexible because of this.
+        * High, it might have low variance but high bias (under the condition that the assumption of shared covariance matrix is wrong).
+        * However, QDA is flexible compared to LDA.
+        * Thus, it is more flexible and can lead to improved performance.
+        * In short, LDA is preferred when there are relatively few training observations and so reducing variance is crucial and vice versa.
+* Naive Bayes
+    * It **assumes** that within the kth class, the p predictors are independent.
+    * However, it **does not assume** anything about the shape of distribution or covariance within each class.
+    * Mathematically, the fk(x) is multiplication of individual functions.
+    * Why is the assumption so powerful?
+        * The problem with earlier approaches is that the marginal distribution along with join distribution plays a heavy role.
+        * However, if assumed that they are independent, then we dont need to worry about the association between the predictors because we have simply assumed that there is no association.
+    * However, in practice, we dont actually believe this assumption to be true. But still it gives a good result if n is not large enough relative to p.
+    * This assumption does introduce some bias but reduces variance by a lot of extent.
+    * If Xj is quantitative then we assume that probability follows a normal distribution.
+    * KDE plot (Kernel Density Estimator) is a smoothened version of histogram.
+* KNN
+    * In orde rto make a prediction for an observation X = x, the training observations that are closest to x are identified.
+    * Then X is assigned to the class to which the plurality of these observations belong.
+    * Dominates LDA and logistic regression when the decision boundary is highly non-linear with n being very large and p being small.
+    * In setting where decision boundary is not linear but n is only modest or p is not small, then QDA may be preferred to KNN.
+    * It does not tell which predictors are important.
+* Poisson Regression
+    * It assumes that data follows poisson distribution.
+    * This means that larger the mean of Y, the larger would be its variance.
+    * It is typically used to model *counts*.
+    * Poisson distribution always takes a non negative number.
+* Link Function (eta) applies a transformation to E(Y | X1....Xn) so that the transformed mean is a linear function of the predictors.
+* This means that eta(E(Y | X1 .... Xn)) = beta0 + beta1\*X1 + ... + betap\*Xp
+* In general, we can perform a regression by modeling the response Y as coming from a particular member of the exponential family (Bernaulli, Gaussian and Poisson), and then transforming the mean of the response so that the transformed mean is a linear function of predictors.
+* Any regression that follows this general approach is called generalized linear model (GLM).
+* [Lab Kaggle Notebook]()

@@ -97,4 +97,4 @@
     * Solutions
         * Drop one of the problematic variables.
         * Combine the collinear variables together into a single predictor.
-* [Lab Kaggle Notebook]()
+* [Lab Kaggle Notebook](https://www.kaggle.com/sameepvani/chapter3-islr-linearregression)

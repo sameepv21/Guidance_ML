@@ -77,6 +77,7 @@
 * Fitted values vs residuals
 * **Residual Plots** --> Residuals vs predictors (xi)
 * For classification problem, use different colors for different classes.
+* Box plot of performance (Test error rates) of different models that we create.
 * Plot a heatmap from seaborn library.
     * Could be for plotting correlation matrix.
     * Could be for identifying null values in the given training dataset.
@@ -87,6 +88,7 @@
 * Plot error rate vs threshold for classification problem.
 * Plot ROC Curves
 * Box plot which compares test error rates for each of the linear scenarios (KNN, LDA. QDA, Logistic, Bayes etc)
+* For classification problem plot density estimates for each class.
 * If polynomial regression is used, then run the code for multiple degrees of the polynomial and note each mean squared test error rate and plot the MSE vs Degree of polynomial graph.
 * If different random splits for validation are used, plot all the graphs (Ref: Pg 209 ISLR PDF)
 * Plot MSE vs flexibility graph if possible.
