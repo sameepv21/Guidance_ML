@@ -41,3 +41,6 @@
     * Bootstrap allows us to overcome this.
     * It allows us to use a computer to emulate the process of obtaining new samples so that we can estimate the variability without generating additional samples.
     * So now instead of repeatedly obtaining independent datasets from the population, we instead obtain distinct datasets by repeatedly sampling observations from the original dataset.
+    * Thus, we randomly select n observations from the dataset in order to produce a bootstrap data set.
+    * It is called with replacement because the same observation can occue more than once in the bootstrap data/
+* [Kaggle Lab Notebook]()
