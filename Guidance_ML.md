@@ -5,6 +5,14 @@
 * Model Creation
 * Hyperparameter Tuning
 * Model Deployment
+* What does it o
+
+# Lifecycle of Data Science Projects
+* Data Analysis or Data Preprocessing
+* Feature Engineering
+* Feature Selection
+* Model Building
+* Model Deplyment
 
 # How to approach an ML Problem?
 * Start with understanding the problem statement.
