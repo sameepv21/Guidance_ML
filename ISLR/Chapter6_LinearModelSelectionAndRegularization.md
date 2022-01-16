@@ -9,7 +9,7 @@
         * Then select the model that gives the best performance.
         * This means we fit 2^p linear models.
         * Algorithm
-            * ![Algorithm_Best_Subset_Selection](./assets/images/Algorithm_Best_Subset_Selection.png)
+            * ![Algorithm_Best_Subset_Selection](../assets/images/Algorithm_Best_Subset_Selection.png)
         * According to this algorithm, the RSS decreases monotonically when number of features are increased and hence we need to select the features carefully otherwise we may end up involving all the features.
         * Hence, in step3 we use cross validation so that it gives RSS or R2 on **test** set.
         * In case of logistic regression, we use deviance instead of RSS.
@@ -20,14 +20,14 @@
         * In each step, the feature that gives the greatest additional improvement to the fit is added to the model.
         * This greatly reduces the number of models to be fitted instead of 2^p.
         * Algorithm
-            * ![Algorithm_Forward_Stepwise_Selection](./assets/images/Algorithm_Forward_Stepwise_Selection.png)
+            * ![Algorithm_Forward_Stepwise_Selection](../assets/images/Algorithm_Forward_Stepwise_Selection.png)
         * Computational advantage over best subset selection.
         * Does not take into account the interaction between the two features.
         * Can be applied when n < p.
     * Backward Stepwise Selection
         * Begins with the full least squares model containing all p predictors and then iteratively removes the least useful predictor.
         * Algorithm
-            * ![Algorithm_Backward_Stepwise_Selection](./assets/images/Algorithm_Backward_Stepwise_Selection.png)
+            * ![Algorithm_Backward_Stepwise_Selection](../assets/images/Algorithm_Backward_Stepwise_Selection.png)
         * Requires n >> p.
     * **Choosing the optimal model**
         * We are trying to minimize the training set RSS and R2. However, we want to minimize the test set RSS and R2.
