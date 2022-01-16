@@ -67,3 +67,46 @@
         * RSS + lambda(sum(coefs))
         * lambda >= 0 is a tuning parameter.
         * Similar to best subset selection, the lasso performs variable selection.
+* Dimension Reduction
+    * Dimension reduction techniques transform the predictors and then fit a least squared model using the transformed variables.
+    * This approach reduces the problem of estimating the p + 1 coefficients to the simpler M + 1 coefficients where M < p.
+    * It constrains the estimated betaj coefficients.
+    * Two steps in DR
+        * Transformed predictors are obtained.
+        * Model is fit on these transformed prefictors.
+    * PCA (Principal Component Analysis)
+        * Technique for DR with unsupervised.
+        * The first principal component (PC) direction fot he data is that along withch the observations vary the most.
+        * This is used to ensure that the maximum data is restored and minimum is lost.
+        * Thus, we project the data points on the pricipal component which simply means finding a location on the line which is closest to the point.
+        * Thus, the first PC defines the line that is as close as possible to the data.
+        * Values of the principal component means single number summaries of the joint predictors.
+        * In general, we can construct upto "p" principal components.
+        * Second PC is a linear combination of the variables that is uncorrelated with first PC and has largest variance sibject to this constraint.
+        * This condition equals the line orthogonal to the first PC.
+    * PCR (Principal Component Regression)
+        * This approach involves constructing the first M PC and then using these as predictors in a linear regression model that is fit using least squared.
+        * Key is that small number of PC can cover most variability in data.
+        * We **assume** that the directions in which features show the most variantions are the directions that are associated with Y.
+        * Note that as more PCs are used in the model, the bias decreases but the variance increases.
+        * **It is not a feature selection method.**
+        * The number of PCs is generally chose by cross validation.
+        * **Note that while performing PCR, standardize each predictors prior to generating PCs.**
+        * PCR has a drawback that there is no garuntee that the directions that best explain the predictors will also be the best directions to use for predicting the response.
+    * PLS (Partial Least Squares)
+        * Technique of DR in supervised manner.
+        * PLS identifies new features in a supervised way.
+        * PLS approach attempts to find directions that help explain both the response and the predictors.
+        * PLS computes the firstion direction by setting each PC equal to coeff from the simple LR.
+        * This coeff is proportional to the correlation betweeb Y and Xj.
+        * Hence highest weight is put on the variables that are most stringly related to the response.
+        * To identify the second PLS direction, we first adjust each of the variables for Z1 by regressing each variables on Z1 and taking residuals.
+        * These residuals can be interpreted as the remaining information that has not been explained by the first PLS direction.
+        * Compute 2nd direction using this orthogonalized data exactly like in first direction.
+* In high dimensional data the bias-variance trade off and danger of overfitting play a very important role.
+* Regression in high dimensional data
+    * Regularization or shrinkage plays a key role.
+    * Appropriate tuning parameter selection is crucial for good predictive performance.
+    * Test error tends to increase as dimensionality of the problem increases unless additional features are truly associated with the response.
+        * This is known as curse of dimensionality.
+* [Kaggle Notebook](https://www.kaggle.com/sameepvani/chapter5-islr-linearmodelandregularizationmethods)
