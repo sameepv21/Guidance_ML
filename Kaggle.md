@@ -6,3 +6,4 @@
 # Tutorials
 - [ ] [Seaborn](https://www.kaggle.com/learn/data-visualization)
 - [x] [Feature Engineering](https://www.kaggle.com/learn/feature-engineering)
+- [ ] [Pipelines](https://www.kaggle.com/alexisbcook/pipelines)
