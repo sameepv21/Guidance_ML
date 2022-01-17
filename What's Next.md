@@ -1,0 +1,39 @@
+# Roadmap
+- [ ] **Python** and R
+- [ ] EDA (Exploratory Data Analysis)
+- [ ] Feature Engineering
+    - [ ] Handling Missing Values
+    - [ ] Handling Outliers
+    - [ ] Categorical Encoding
+    - [ ] Normalization and Standardization
+- [ ] Feature Selection
+    - [ ] Correlation
+    - [ ] Forward Elimination
+    - [ ] Backward Elimination
+    - [ ] Univariate Selection
+    - [ ] Random Forest Importance
+    - [ ] Feature selection with Decision Trees
+- [ ] Machine Learning Algorithms
+    - [ ] Regression
+    - [ ] Classification
+    - [ ] Clustering
+    - [ ] Linear Regression
+    - [ ] Logistic Regression
+    - [ ] Decision Tree
+    - [ ] Random Forest
+    - [ ] Xgboost
+    - [ ] Kmeans clustering
+    - [ ] Nearest Neighbours clustering
+    - [ ] DBSCAN
+- [ ] Hyperparameter Tuning
+    - [ ] GridSearch
+    - [ ] RandomizedSearch
+    - [ ] Hyperopt
+    - [ ] Optuna
+    - [ ] Genetics Algorithm
+- [ ] Dockers and Kubernetes
+- [ ] Model Deployements
+    - [ ] **AWS**
+    - [ ] Azure
+    - [ ] GCP
+- [ ] End to End ML Projects
