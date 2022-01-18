@@ -1,5 +1,5 @@
 # Roadmap
-- [ ] **Python** and R
+- [x] **Python** or R
 - [ ] EDA (Exploratory Data Analysis)
 - [ ] Feature Engineering
     - [ ] Handling Missing Values

@@ -28,3 +28,10 @@
     * These can give pretty good understanding about outliers.
     * Any observation that is 3*IQR (Inter Quartile Range) above the third quartile or below the first quatile can be considered as outliers.
 * Then one can check for distributions. Either normal, right or left skewed.
+
+# Visualization
+* Use sns.heatmap() to see the NaN Values.
+* Use sns.countplot() for categorical count.
+* **Interpretations based on these graphs are important.**
+* sns.distplot() to see the distribution.
+* sns.boxplot() to check for outliers and help in filling null values based on mean.
