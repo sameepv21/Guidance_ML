@@ -35,3 +35,4 @@
 * **Interpretations based on these graphs are important.**
 * sns.distplot() to see the distribution.
 * sns.boxplot() to check for outliers and help in filling null values based on mean.
+* sns.pairplot() to plot scatter plots for each pair of qunatitative variable.
