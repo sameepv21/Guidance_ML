@@ -70,3 +70,18 @@
     * **It is a univariate metric.** This means that it can't detect interations between features.
         * This means that if a feature is very infomration when interacting with other features, but not so information all alone, then MI score will be less but the feature is still important.
     * The actual usefulness of the feature depends on the model you use it with. A feature is only useful to the extent that its relationship with the target is one your model can learn.
+
+# Feature Engineering for multimodal distributions
+* Note that tree based models are able to handle multimodal distributions without transforming.
+* Thus, to set a baseline model, use LGBM.
+* We can use a [mixture model](https://en.wikipedia.org/wiki/Mixture_model) for this. 
+* It is a probabilistic model for representing the presence of subpopulations within an overall population, without requiring that an observed data set should identify the sub population to which an individual observation belongs.
+* Gaussian Mixture Modelling (GMM)
+    * Unsupervised Learning Algorithm
+    ```python
+    from sklearn.mixture import GaussianMixture
+    gmm = GaussianMixture(n_components=2, random_state=42)
+    gmm.fit(train_df.target.values.reshape(-1, 1))
+    train_df['target_class'] = gmm.predict(train_df.target.values.reshape(-1, 1))
+    ```
+* Deep Feature Synthesis
