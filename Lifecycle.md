@@ -3,6 +3,7 @@
 # Lifecycle
 * Data Analysis or Data Preprocessing
 * Feature Engineering
+* Preprocessing
 * Feature Selection
 * Model Building
 * Model Deplyment
