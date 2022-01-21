@@ -5,6 +5,6 @@
 - [ ] [Handling Multimodal Distributions](https://www.kaggle.com/iamleonie/handling-multimodal-distributions-fe-techniques)
 
 # Tutorials
-- [ ] [Seaborn](https://www.kaggle.com/learn/data-visualization)
+- [x] [Seaborn](https://www.kaggle.com/learn/data-visualization)
 - [x] [Feature Engineering](https://www.kaggle.com/learn/feature-engineering)
 - [ ] [Pipelines](https://www.kaggle.com/alexisbcook/pipelines)
