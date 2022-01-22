@@ -1,39 +1,67 @@
 # Roadmap
+
 - [x] **Python** or R
+- [x] Theory (ISLR)
+- [x] Practical (Hand on ML)
 - [ ] EDA (Exploratory Data Analysis)
 - [ ] Feature Engineering
-    - [ ] Handling Missing Values
-    - [ ] Handling Outliers
-    - [ ] Categorical Encoding
-    - [ ] Normalization and Standardization
+  - [ ] Handling Missing Values
+  - [ ] Handling Outliers
+  - [ ] Categorical Encoding
+  - [ ] Normalization and Standardization
 - [ ] Feature Selection
-    - [ ] Correlation
-    - [ ] Forward Elimination
-    - [ ] Backward Elimination
-    - [ ] Univariate Selection
-    - [ ] Random Forest Importance
-    - [ ] Feature selection with Decision Trees
+  - [ ] Correlation
+  - [ ] Forward Elimination
+  - [ ] Backward Elimination
+  - [ ] Univariate Selection
+  - [ ] Random Forest Importance
+  - [ ] Feature selection with Decision Trees
 - [ ] Machine Learning Algorithms
-    - [ ] Regression
-    - [ ] Classification
-    - [ ] Clustering
-    - [ ] Linear Regression
-    - [ ] Logistic Regression
-    - [ ] Decision Tree
-    - [ ] Random Forest
-    - [ ] Xgboost
-    - [ ] Kmeans clustering
-    - [ ] Nearest Neighbours clustering
-    - [ ] DBSCAN
+  - [ ] Regression
+  - [ ] Ridge
+  - [ ] Lasso
+  - [ ] Classification
+  - [ ] Clustering
+  - [ ] Linear Regression
+  - [ ] Logistic Regression
+  - [ ] LDA
+  - [ ] QDA
+  - [ ] Naive Bayes
+  - [ ] Poisson Regression
+  - [ ] Step Functions
+  - [ ] Regression Splines
+  - [ ] Smooting Splines
+  - [ ] GAN
+  - [ ] Decision Tree
+  - [ ] Random Forest
+  - [ ] LGBM
+  - [ ] Xgboost
+  - [ ] Kmeans clustering
+  - [ ] Nearest Neighbours clustering
+  - [ ] DBSCAN
 - [ ] Hyperparameter Tuning
-    - [ ] GridSearch
-    - [ ] RandomizedSearch
-    - [ ] Hyperopt
-    - [ ] Optuna
-    - [ ] Genetics Algorithm
+  - [ ] GridSearch
+  - [ ] RandomizedSearch
+  - [ ] Hyperopt
+  - [ ] Optuna
+  - [ ] Genetics Algorithm
 - [ ] Dockers and Kubernetes
 - [ ] Model Deployements
-    - [ ] **AWS**
-    - [ ] Azure
-    - [ ] GCP
+  - [ ] **AWS**
+  - [ ] Azure
+  - [ ] GCP
 - [ ] End to End ML Projects
+
+# Jan 2022 Target
+
+- [ ] ISLR until Chapter 10 complete.
+- [ ] At least one notebook publish.
+- [ ] Concepts that need good command
+  - [ ] EDA
+    - [ ] Manually
+    - [ ] Library
+  - [ ] Feature Engineering
+  - [ ] Feature Selection
+  - [ ] Pipelining
+- [ ] Github Ready Project
+    * Try to include all lifecycle parts.
