@@ -18,8 +18,15 @@
     * Correlation
 * KDE (Kernel Density Estimates)
 
+# Python Libraries
+* Pandas-Profiling
+* Sweetviz
+* Autoviz
+* D-Tale
+
 # Links
 * [Introduction](https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15)
+* [Python Libraries](https://towardsdatascience.com/4-libraries-that-can-perform-eda-in-one-line-of-python-code-b13938a06ae)
 
 # Notes
 * .describe() is used to gather statistics.
