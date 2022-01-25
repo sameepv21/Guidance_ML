@@ -9,3 +9,6 @@
         * For classification --> chi2, f_classif, mutual_info_classif
         * The methods based on F-test estimate the degreee of linear dependency between two random variables.
         * On the other hand, mutual information methods can capture any kind of statistical dependency, but being nonparametric, they require more samples for accurate estimation.
+
+# Links
+* [Good but long article](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/#:~:text=Feature+selection+is+the+process,when+developing+a+predictive+model.&text=There+are+two+main+types,into+wrapper%2C+filter+and+intrinsic.)
