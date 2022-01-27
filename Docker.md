@@ -69,5 +69,46 @@
     sudo docker run hello-world
     ```
 
+# Terminologies
+* Container
+    * Container is a sandboxed process on your machine that is isolated from all other processes on the host machine.
+    * It is a runnable instance of an image.
+    * Can be run on local machines, virtual machines or be deployed to the cloud.
+    * Can be run on any OS.
+    * Each container is isolated from other and run their own software, binaries and configurations.
+* Image
+    * Container uses an isolated filesystem.
+    * This custom filesystem is provided by a container image.
+    * It contains everything needed to run an application including all dependencies, configuarations, scripts, bins, env variables etc.
+* Dockerfile
+    * Used to build the application.
+    * It is a text-based script of instructions that is used to create a container image.
+* Docker Registry
+    * It is analogous to github repository.
+    * But instead of github it is docker hub.
+
+# Commands
+* docker run <OPTIONS> <IMAGE_NAME>
+    * options can be viewed in the documentation
+* docker build <OPTIONS> <PATH_OF_CONTAINER>
+    * downloads, installsand builds a lot of layers
+* docker stop <CONTAINER_ID>
+    * stops a running docker container with id = CONTAINER_ID
+* docker container ls
+    * dispkays all running docker containers.
+    * "docker ps" returns the same thing as the above command.
+* docker rm <CONTAINER_ID>
+    * Removes the container from your system.
+    * Stop only kills the docker process for that container id but rm removes the entire container with that particular container id.
+    * Stop and remove in a single line.
+        * docker rm -f <CONTAINER_ID>
+* docker push <USERNAME>/<REPO_NAME>
+    * Pushes the changes to docker registry.
+* docker image ls
+    * Same like docker container ls but with image.
+* docker login -u <USERNAME>
+    * Log in to docker account in your local machine/system.
+* docker tag <IMAGE_NAME> <USERNAME>/<REPO_NAME>
+
 ## Miscellenious
 * Please Refer to [this site](https://docs.docker.com/get-started/overview/#the-docker-daemon) for some technical terms

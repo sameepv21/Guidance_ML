@@ -85,3 +85,7 @@
     train_df['target_class'] = gmm.predict(train_df.target.values.reshape(-1, 1))
     ```
 * Deep Feature Synthesis
+
+# Handling Multimodal Distributions
+* Gaussian Mixture Model
+    * 
