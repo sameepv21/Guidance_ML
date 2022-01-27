@@ -76,6 +76,7 @@
     * Can be run on local machines, virtual machines or be deployed to the cloud.
     * Can be run on any OS.
     * Each container is isolated from other and run their own software, binaries and configurations.
+    * Note that suppose we create two containers that have the same image, then also the changes in one are not reflected in the second container.
 * Image
     * Container uses an isolated filesystem.
     * This custom filesystem is provided by a container image.
@@ -86,6 +87,9 @@
 * Docker Registry
     * It is analogous to github repository.
     * But instead of github it is docker hub.
+* Container Volumes
+    * Provide the ability to connect specific filesystem paths of the container back to the host machine.
+    * If a directory in the container is mounted, then changes in the directory are also seen on the host machine.
 
 # Commands
 * docker run <OPTIONS> <IMAGE_NAME>
@@ -109,6 +113,13 @@
 * docker login -u <USERNAME>
     * Log in to docker account in your local machine/system.
 * docker tag <IMAGE_NAME> <USERNAME>/<REPO_NAME>
+* docker exec <CONTIAINER_ID> <UBUNTU_COMMAND>
+    * Works only if image of the container is ubuntu
+    * Basically we can then run any bash command on the container terminal which is available only in docker desktop.
+    * Hence, using CLI is quite cumbersome in this case.
+* docker volume inspect <DATABASE_NAME>
+    * See in JSON format, what is one of the entries stored in data
+    * Mount point is the actual location on the disk where data is stored.
 
 ## Miscellenious
 * Please Refer to [this site](https://docs.docker.com/get-started/overview/#the-docker-daemon) for some technical terms
