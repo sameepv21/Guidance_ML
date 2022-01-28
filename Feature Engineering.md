@@ -88,4 +88,6 @@
 
 # Handling Multimodal Distributions
 * Gaussian Mixture Model
+    * Soft probabilistic clustering model that llows us to describe the membership of points to a set of clusters using a mixture of Gaussian densities.
+    * Tries to describe the data as if it originated from a mixture of gaussian distributions.
     * 
