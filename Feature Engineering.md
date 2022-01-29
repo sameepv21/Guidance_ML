@@ -87,7 +87,16 @@
 * Deep Feature Synthesis
 
 # Handling Multimodal Distributions
-* Gaussian Mixture Model
+* Gaussian Mixture Model ([Article Link](https://towardsdatascience.com/gaussian-mixture-models-and-expectation-maximization-a-full-explanation-50fa94111ddd))
     * Soft probabilistic clustering model that llows us to describe the membership of points to a set of clusters using a mixture of Gaussian densities.
     * Tries to describe the data as if it originated from a mixture of gaussian distributions.
-    * 
+    * Pretty Flexible model because with large number of mixtures and appropriate choice of the involved parameters, one can approximate any continuous pdf.
+    * Here, the probability density is the weighted sum of K gaussian distributions.
+    * So then, we describe the porbability of observing a specific observation as a mixture.
+    * Note that each of the k distributions have the parameters such as mean and covaruance matrix.
+    * Thus, we want the parameter values that maximizes the likelihood of the dataset or the parameter that maximizes the probability of observing all the data points together i.e joint PDF.
+    * ![](./assets/images/Expectation_maximization_FE.png)
+    * Note that here the probabilities of event are independent.
+    * However, instead of likelihood, we calculate the log-likelihood because  log is  monotonically increasing concave funciton and does not change the location of the maximum.
+    * Expectation maximization
+        * 
