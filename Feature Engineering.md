@@ -99,4 +99,7 @@
     * Note that here the probabilities of event are independent.
     * However, instead of likelihood, we calculate the log-likelihood because  log is  monotonically increasing concave funciton and does not change the location of the maximum.
     * Expectation maximization
-        * 
+        * If we already knew the gaussians in a plot, for each observation, we would compute the cluster probabilities.
+        * Probability would be the ratio between the gaussian value and the sum of all guassians.
+        * But, how to estimate the gaussians in a plot.
+        * Use this formula ![](./assets/images/EM_GMM_Paramter_Estimation.png)
