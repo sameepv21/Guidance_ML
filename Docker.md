@@ -90,6 +90,16 @@
 * Container Volumes
     * Provide the ability to connect specific filesystem paths of the container back to the host machine.
     * If a directory in the container is mounted, then changes in the directory are also seen on the host machine.
+    * Bind mounts and named volumes are two types of volumes.
+    * The main difference between both of them is that bind mounts lets you control the host location whereas docker choose it in case of named volume.
+* Networking
+    * Click [this link](https://docs.docker.com/get-started/07_multi_container/) for documentation.
+    * Containers are isolated meaning that one container does not know about other processes and containers.
+    * In order to make containers communicate, networking must play a role.
+    * Simple rule is that if two containers are on the same network, they can talk to each other.
+    * Ways to put a container on a network
+        * Assign it at start
+        * Connect an existing container
 
 # Commands
 * docker run <OPTIONS> <IMAGE_NAME>
@@ -120,6 +130,12 @@
 * docker volume inspect <DATABASE_NAME>
     * See in JSON format, what is one of the entries stored in data
     * Mount point is the actual location on the disk where data is stored.
+* docker logs -f <CONTAINER_ID>
+    * Shows log file for the specific container id.
+* docker network create <NETWORK_NAME>
+* docker run -it --network <NETWORK_NAME> nicolaka/netshoot
+    * nicolaka/netshoot is a troubleshooting and debugging tool which helps in to debug problems in network.
+    * The above command creates a new image of nicolaka/netshoot on <NETWORK_NAME> network.
 
 ## Miscellenious
 * Please Refer to [this site](https://docs.docker.com/get-started/overview/#the-docker-daemon) for some technical terms
