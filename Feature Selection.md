@@ -35,6 +35,16 @@
 * Correlation Matrix
     * See the correlation between each features and output variable.
     * Hence, higher the corealtion between feature and output variable, the feature should be selected.
+* RFE
+    * Recursive Feature Elimination
+    * Gives an external estimator that assigns weights to features.
+    * Selects features by recursively considering smaller and smaller sets of features.
+* ![](./assets/images/Feature_Selection_Summary.png)
+
+# How to select feature selection method?
+* ![](./assets/images/Selecting_Feature_Selection_Method.png)
 
 # Links
 * [Good but long article](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/#:~:text=Feature+selection+is+the+process,when+developing+a+predictive+model.&text=There+are+two+main+types,into+wrapper%2C+filter+and+intrinsic.)
+* [Feature Selection Techniques with Python](https://towardsdatascience.com/feature-selection-techniques-in-machine-learning-with-python-f24e7da3f36e)
+* [Undetstainding PCA](https://towardsdatascience.com/understanding-pca-fae3e243731d)
