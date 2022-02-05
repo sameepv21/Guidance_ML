@@ -1,5 +1,5 @@
 # Pre-steps
-* The following steps should be done on both server and client side.
+* The following steps should be done on both server and client side prior to buysing aws ec2 instance.
 * Create a .env file.
     * Currently write localhost as the ip address and port number on which the server/node/express backend would be running.
     * Write hostname and password for mysql backend if using mysql, else the link of mongodb atlas if using mongodb.
@@ -11,7 +11,7 @@
 
 # Steps for NGINX
 * Set Up AWS Instance
-    * Use LTS Ubuntu Version with SSD, General Purpose 64 bit X86 processor.
+    * Use EC2 with LTS Ubuntu Version with SSD, General Purpose 64 bit X86 processor.
     * Use t2.micro (for free tier)
     * Under storage section, add 30gb storage which is free under free tier.
     * Under configure security group, add All traffic for port 0-65535.
@@ -30,6 +30,7 @@
     * This step further contains a lot of steps.
     * You need to install noderesources using curl
         * curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+        * apt-get install nodejs
     * Check your node and npm version.
     * If your npm version is less than 7, then perform the following command which installs the latest version of npm which is required.
         * npm install -g npm
@@ -63,7 +64,7 @@
         * Delete the comments if any.
         * Change the root path to where your index.html file is located i.e /var/www.
         * **Link sites-available** and sites-enabled from the command provided below.
-        * Test for syntax error in nginx and restart nginx.
+        * Test for syntax error (perform config test) in nginx and restart nginx.
         * By now this is what your configuration file should contain
             * ```sh
               server {
@@ -73,7 +74,7 @@
                     root /var/www/warehouse;
                     index index.html;
 
-                    server_name warehouse-management.ml www.wareho>
+                    server_name warehouse-management.ml www.warehouse-management.ml;
 
                     location / {
                             try_files $uri $uri/ =404;
@@ -95,7 +96,7 @@
           ```
         * **Change the port according to where your express backend is running.**
     * Test configuration of nginx and restart it.
-* Refresh the browser (Your raw site, without backend should be up and running in production environment).
+* Enter your domain name in your browser (Your raw site, without backend should be up and running in production environment. Note that this may take upto 30 min or so).
 * Configure Backend
     * Make sure your current directory is backend.
     * Perform prelimnary inspection whether all the routes are using .env variables or not and change them wherever necessary.
@@ -109,7 +110,7 @@
                 * Default password is root.
         * While still inside the mysql server, run mysql script using source <PATH>
             * <PATH> includes path where your .sql file is located.
-        * Run command to reconfigure your root password
+        * Run command (given below) to reconfigure your root password
 * Finally, check the status of nginx and pm2 to ensure that everything is working.
 * Then, enter your domain name in the browser and your site is deployed!!
 
