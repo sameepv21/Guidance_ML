@@ -3,12 +3,12 @@
 - [x] **Python** or R
 - [x] Theory (ISLR)
 - [x] Practical (Hand on ML)
-- [ ] EDA (Exploratory Data Analysis)
-- [ ] Feature Engineering
-  - [ ] Handling Missing Values
-  - [ ] Handling Outliers
-  - [ ] Categorical Encoding
-  - [ ] Normalization and Standardization
+- [x] EDA (Exploratory Data Analysis)
+- [x] Feature Engineering
+  - [x] Handling Missing Values
+  - [x] Handling Outliers
+  - [x] Categorical Encoding
+  - [x] Normalization and Standardization
 - [ ] Feature Selection
   - [ ] Correlation
   - [ ] Forward Elimination
