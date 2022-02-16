@@ -136,6 +136,10 @@
 * docker run -it --network <NETWORK_NAME> nicolaka/netshoot
     * nicolaka/netshoot is a troubleshooting and debugging tool which helps in to debug problems in network.
     * The above command creates a new image of nicolaka/netshoot on <NETWORK_NAME> network.
+* Connect to mysql
+    * docker run -it --network <NETWORK_NAME> <REPO_USER/REPO_NAME>
+    * dig mysql
+        * Gets the ipaddress and DNS services for mysql
 
 ## Miscellenious
 * Please Refer to [this site](https://docs.docker.com/get-started/overview/#the-docker-daemon) for some technical terms
