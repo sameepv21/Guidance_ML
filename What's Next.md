@@ -11,6 +11,7 @@
   - [x] Normalization and Standardization
 - [ ] Feature Selection
   - [ ] Correlation
+  - [ ] Mutual Information
   - [ ] Forward Elimination
   - [ ] Backward Elimination
   - [ ] Univariate Selection
