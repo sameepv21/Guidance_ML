@@ -1,6 +1,6 @@
 # Roadmap
 
-- [x] **Python** or R
+- [x] **Python** and R
 - [x] Theory (ISLR)
 - [x] Practical (Hand on ML)
 - [x] EDA (Exploratory Data Analysis)
@@ -9,6 +9,7 @@
   - [x] Handling Outliers
   - [x] Categorical Encoding
   - [x] Normalization and Standardization
+- Machine Learning 
 - [ ] Feature Selection
   - [ ] Correlation
   - [ ] Mutual Information
@@ -46,23 +47,10 @@
   - [ ] Hyperopt
   - [ ] Optuna
   - [ ] Genetics Algorithm
+- [ ] Pipelines
 - [ ] Dockers and Kubernetes
 - [ ] Model Deployements
   - [ ] **AWS**
   - [ ] Azure
   - [ ] GCP
 - [ ] End to End ML Projects
-
-# Jan 2022 Target
-
-- [ ] ISLR until Chapter 10 complete.
-- [ ] At least one notebook publish.
-- [ ] Concepts that need good command
-  - [ ] EDA
-    - [ ] Manually
-    - [ ] Library
-  - [ ] Feature Engineering
-  - [ ] Feature Selection
-  - [ ] Pipelining
-- [ ] Github Ready Project
-    * Try to include all lifecycle parts.
