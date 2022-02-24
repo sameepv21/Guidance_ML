@@ -52,6 +52,7 @@
 * seq() --> More control over entering data.
 * scan() --> Takes input from console or user.
     * Note that it does not take one input. It keeps on taking input unless enter is pressed twice.
+* rep() --> Repeat certain task and store the output
 
 # Coersion or Casting
 * Changing one datatype into another
