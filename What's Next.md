@@ -11,11 +11,11 @@
   - [x] Normalization and Standardization
 - Machine Learning 
 - [ ] Feature Selection
-  - [ ] Correlation
-  - [ ] Mutual Information
+  - [x] Correlation
+  - [x] Mutual Information
   - [ ] Forward Elimination
   - [ ] Backward Elimination
-  - [ ] Univariate Selection
+  - [x] Univariate Selection
   - [ ] Random Forest Importance
   - [ ] Feature selection with Decision Trees
 - [ ] Machine Learning Algorithms
