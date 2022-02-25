@@ -81,6 +81,6 @@
 # Extras
 * Putting a parenthesis around a variable, R will not only store that variable in the environment but also display it in the console.
 * cbind.data.frame() --> Combine and Cast into dataframe in one line.
-* **Factors in R is a varaible used to categorize and store the data, having a limited number of different values.**
+* **Factors in R is a v araible used to categorize and store the data, having a limited number of different values.**
 * **It is also known as categorical variable that stores both string and integer data values as levels.**
 * '<-' is the assignment operator in R.
