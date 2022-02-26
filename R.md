@@ -53,6 +53,25 @@
 * scan() --> Takes input from console or user.
     * Note that it does not take one input. It keeps on taking input unless enter is pressed twice.
 * rep() --> Repeat certain task and store the output
+* browseURL() --> Opens the passed in URL in the webpage.
+* import() --> Reads the file passed in as the parameter
+    * Can read csv, text and xlsx.
+    * Uses rio package.
+* View() --> Spreadsheet like thing that helps to view the dataset.
+* read.table() --> Another method to read the files.
+* rect.hclust() --> Differentiate and create rectanular boxes around a dendrogram based on the passes parameters.
+* prcomp() --> Compute Principal Components
+* predict() --> Make predictions
+* biplot() --> 2D graphs with names and not numbers.
+    * Used after PCA.
+    * Not very inferential
+* lm() --> Linear Model
+* anova() --> Analysis of variance table
+* coef() --> Coefficients
+* confint() --> Confidence internval for our lm.
+* resid() --> Get the residuals of our lm.
+* lars() --> Least angle regression
+* caret --> classification and regression training
 
 # Coersion or Casting
 * Changing one datatype into another
@@ -84,3 +103,4 @@
 * **Factors in R is a v araible used to categorize and store the data, having a limited number of different values.**
 * **It is also known as categorical variable that stores both string and integer data values as levels.**
 * '<-' is the assignment operator in R.
+* Pipeline in R --> %>%
