@@ -23,6 +23,29 @@
 * For a change to be a part of the trend, it shoild occur over a longer period than any seasonal changes.
 * If trend discovered by our LR model is almost identical to the moving average plot, which suggests that a linear trend was the right decision in this case.
 
+# Seasonality
+* Time series exhibites seasonality whenever there is a regular, periodic change in th mean of the series.
+* Often driven by the cycles of the natural world over days and years or by conventions of social behaviour surrounding dates and times.
+* 2 features that model seasonality
+    * Indicators
+        * Weekly season of daily observations.
+    * Fourier
+        * Many observations like annual season of daily observations.
+* Seasonal Plots
+    * Used to discover seasons.
+    * Shows segments of the time series plotted against some common period, the period being the "season" you want to observe.
+* Seasonal Indicators
+    * Binary features that represent seasonal differences in the level of a time series.
+    * Result of treating seasonal period as a categorical feature and apply one-hot-encoding.
+* Fourier Features
+    * Instead of creating a feature for each date, it tries to capture the overall shape of the seasonal curve with just a few features.
+    * Idea is to include, in our training data , periodic curves having the same frequencies as the season we are trying to model.
+    * Thus, we use trigonometric functions.
+    * Fourier Features are pairs of sine and cosine curves, one pair for each potential frequency in the season starting with the longest.
+* Periodogram
+    * Calculates the number of fourier pairs required to actually include in feature set.
+    * Tells you the strength of the frequencies in a time series.
+ 
 # Extras
 * Series is time dependent if its values can be predicted from the time they occured.
 * Series is serial dependent when an observation can be predicted from pervious observations.
