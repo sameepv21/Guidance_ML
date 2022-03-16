@@ -45,6 +45,17 @@
 * Periodogram
     * Calculates the number of fourier pairs required to actually include in feature set.
     * Tells you the strength of the frequencies in a time series.
+
+# Serial Dependence
+* Returns evolve nonrandomly, that is they are correlated with their prior values.
+* One special way is cycles.
+* Cycles are patterns of growth and decay on values at pervious times, but not necessarily on the time step itself.
+* Cyclic behaviours are not time dependent as seasons are.
+* Less about particular date of occurence but more about what has happened in the recent past.
+* Use lag plots to model serrial dependence (like cycles).
+* Lagging a time series means to shift its values forward one or more steps.
+* In layman terms, simply create new features with one delay/row below it.
+* We make past values appear to be exisiting or occuring in same period of time.
  
 # Extras
 * Series is time dependent if its values can be predicted from the time they occured.
