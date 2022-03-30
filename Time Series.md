@@ -56,7 +56,18 @@
 * Lagging a time series means to shift its values forward one or more steps.
 * In layman terms, simply create new features with one delay/row below it.
 * We make past values appear to be exisiting or occuring in same period of time.
- 
+
+# Denoising
+* Just like moving average, you denoise the variations in timestamp vs target plots.
+* One more method other than MA is Wavelet Denoising
+* Wavelet Denoising
+    * Require lilbrary pywt
+    * Wavelet Transformation is used.
+    * What it does is that it shrinks the smaller values of coefficients or removes them without affecting the signal.
+    * Thus, you require the threshold value for wavelet coefficients and reconstruct the data using the inverse wavelet transform.
+    * **Look for in depth mathematical explanation on how it works.**
+* These techniques are also called smoothing techniques as they smoothen the noise or variations in time series data.
+
 # Extras
 * Series is time dependent if its values can be predicted from the time they occured.
 * Series is serial dependent when an observation can be predicted from pervious observations.
@@ -64,3 +75,6 @@
 * Deterministic process is a technical term for a time series that is non-random or completely determined.
 * Look at something called out of samples features.
     * Referas to times outside of the observation perioud of the training data.
+* **Look for stride in Moving Average along with window size.**
+* Box plots can be useful for time series data with multiple categories of features.
+    * Comparisions are made much more easier with it.
