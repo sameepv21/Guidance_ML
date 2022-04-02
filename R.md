@@ -9,6 +9,7 @@
 # Links
 * [Downloading R](https://cloud.r-project.org/)
 * [R for Data Science (**Must Read Book**)](https://r4ds.had.co.nz/)
+* [Handson Book for R](https://rstudio-education.github.io/hopr/)
 
 # Packages Download
 * CRAN (Comprehensive R Archive Network)
