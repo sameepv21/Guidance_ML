@@ -8,6 +8,7 @@
 
 # Links
 * [Downloading R](https://cloud.r-project.org/)
+* [R for Data Science (**Must Read Book**)](https://r4ds.had.co.nz/)
 
 # Packages Download
 * CRAN (Comprehensive R Archive Network)
@@ -15,6 +16,7 @@
 * Trending GitHub Repos
 
 # Some important packages
+* tidyverse --> A combined package for almost all libraries
 * dplyr --> Deep Lyer --> Manipulating Dataframes
 * tidyr --> Tydier --> Cleaning up information
 * stringr --> Stringer --> For working with strings
@@ -47,6 +49,7 @@
 * matrix() --> Create matirc
 * cbind() --> Column wise join two or more dataframes or arrays or matrices.
     * Result is a matrix in general case
+* rbind() --> Forma a matrix by combinding rows.
 * as.data.frame() --> Create a dataframe
 * list() --> Create a list
 * seq() --> More control over entering data.
@@ -72,6 +75,24 @@
 * resid() --> Get the residuals of our lm.
 * lars() --> Least angle regression
 * caret --> classification and regression training
+* source(<FILE_NAME_IN_QUOTES>) --> Run .r script
+* objects()/ls() --> Displays the names of the objects which are currently stored within R.
+* rm() --> Remove objects currently stored in workspace
+* seq() --> Generate sequence of numbers
+* is.na() --> Gives true and false for x where na is there.
+* attributes(<OBJECT>) --> Returns a list of all the non-intrinsic attributes.
+* unclass() --> Remove class of an object for temporary purposes.
+* factor() --> Creates a factor.
+* tapply() --> Gives output of a function (say mean()) of the vector passed with the components labelled by the levels in a factor.
+* ordered() --> custom order for factors instead of alphabetical.
+* array() --> Creates an array
+* outer() --> Perform outer product on 2 **vectors**.
+* t(<MATRIX>) --> Transpose of the matrix
+* eigen() --> Calculated eigenvalues and eigenvectors os symmatric matrix.
+* svd() --> Calculate SVD of the provided matrix
+* lsfit() --> Least squared fit
+* qr() --> Gives qr decomposition of the provided matrix.
+* attach() and detach() --> Attach/Detach database (list or dataframe) to the R session 
 
 # Coersion or Casting
 * Changing one datatype into another
@@ -104,3 +125,7 @@
 * **It is also known as categorical variable that stores both string and integer data values as levels.**
 * '<-' is the assignment operator in R.
 * Pipeline in R --> %>%
+* Shapes are auto handled in R (most of the times).
+* Factors are data structures in R that store categorical data.
+* Inverse of a matrix is done with the help of solve function.
+* Look at global variables in R
