@@ -42,7 +42,7 @@
 * lines() --> Plotting line chart
 * density() --> plotting KDE
 * rug() --> Plotting rug plot
-* summary() --> Analogous to X_train.describe() in pandas
+* summary() --> Analogous to X_train.describe() in pandas but more in depth
 * head() --> Shows 6 records
 * describe() --> Only for quantitative variable --> Requires psych library --> Gives more details than summary()
 * c() --> Combine/concat
@@ -62,7 +62,7 @@
     * Can read csv, text and xlsx.
     * Uses rio package.
 * View() --> Spreadsheet like thing that helps to view the dataset.
-* read.table() --> Another method to read the files.
+* read.table(<PATH>) --> Another method to read the files.
 * rect.hclust() --> Differentiate and create rectanular boxes around a dendrogram based on the passes parameters.
 * prcomp() --> Compute Principal Components
 * predict() --> Make predictions
@@ -93,7 +93,41 @@
 * svd() --> Calculate SVD of the provided matrix
 * lsfit() --> Least squared fit
 * qr() --> Gives qr decomposition of the provided matrix.
-* attach() and detach() --> Attach/Detach database (list or dataframe) to the R session 
+* attach() and detach() --> Attach/Detach database (list or dataframe) to the R session
+* data() --> See the list of datasets available.
+* edit() --> Small spreadsheet type view for editing the dataset
+* fivenum() --> Same as summary() but also gives stem and leaf plot.
+* density() --> More elegant density/distribution plots
+* shapiro.test() --> shapiro-wilk test for normality
+* boxplot() --> plots box plots
+* t.test() --> Hypothesis testing
+* anova() --> Analysis of variance
+* coef() --> Extract the regression coefficients.
+* deviance() --> Residual Sum of squares
+* formula() --> Extract the model formula
+* predict() --> Predicted values corresponding to the determining variable values in dataframe
+* residuals() --> Extract residuals in the form of matrix
+* step() --> Select a suitable model by adding or dropping terms and preserving hierarchies
+    * Model with smallest value of AIC is returned
+* vcov() --> returns variance-covariance matrix of the main parameters of a fitted model object
+* glm() --> generalized linear model
+    * Family of data can be set such as gaussian, poisson and binomial
+* nlm() --> Non-linear model
+
+# Plotting Functions
+* plot() --> Simple scatter plot
+* pairs() --> Scatter plot for every permutation in the given dataframe
+* coplot() --> Similar to plot but for multiple variables simultaneously
+* qqnorm(), qqline(), qqplot() --> Distribution-Comparision plots
+* hist()
+* dotchart()
+* image(), contour(), persp() --> Plots contour plots for 3 dimensions
+* points(), lines() --> Adds points or connected lines to the current plot
+* text() --> Adds labels and title to the current plot
+* abline() --> Adds linear regression line along with scatter plot
+* legend(), title() and axis() --> Adds legend, title and axis respectively to the current plot
+* locator() --> Interacting with graphs, waits for mouse cursor
+* identify() --> Allow users to highlight any of the points defined by x and y.
 
 # Coersion or Casting
 * Changing one datatype into another
@@ -130,3 +164,9 @@
 * Factors are data structures in R that store categorical data.
 * Inverse of a matrix is done with the help of solve function.
 * Look at global variables in R
+* Look at something called Quantile-Quantile Plots, lines() and ecdf() functions
+* Since there are many more statistical tests, look for them on the internet as and when required.
+* Ordinary assignments done inside a function in R are local and temporary.
+    * Use <<- for global and permanent assignment
+* R also uses object oriented approach and see how to implement classes and objects in it.
+* **Look at graphical parameters**
