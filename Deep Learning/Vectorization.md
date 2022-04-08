@@ -7,3 +7,8 @@
 # How does it work?
 * Using inbuilt functions have optimised code that can even run paralelly on CPU or GPU using SIMD (Single Instruction Multiple Data).
 * This means that using for loops only does the computations on CPU sequentially whereas the inbuilt functions can take advantage of paralellization of CPU and GPU to achieve much more faster results.
+
+# Extras
+* For almost any logic that you might think needs for loop, there might be just equivalent python function that meets your needs.
+* This is done using vectorization.
+* It is very important concept for efficient implementation of neural network.
