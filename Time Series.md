@@ -68,6 +68,10 @@
     * **Look for in depth mathematical explanation on how it works.**
 * These techniques are also called smoothing techniques as they smoothen the noise or variations in time series data.
 
+# Feature Engineering Techniques
+* Time step features --> Tells the relative time after a particular event
+* Lag Features --> Tells the correlation between previous 'n' time units of sales and current sales.
+
 # Extras
 * Series is time dependent if its values can be predicted from the time they occured.
 * Series is serial dependent when an observation can be predicted from pervious observations.
