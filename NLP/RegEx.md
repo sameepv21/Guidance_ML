@@ -21,4 +21,16 @@
 * Wrapping in \b matchs a word boundary and not a substring.
 
 # Disjunction, Grouping and Precedence
-* 
+* Disjunction operator --> OR Operator --> '|'
+* Precedence means which operator is given more weightage.
+* Paranthesis is used (kind of like in any programming language)
+* Operator Precedence hierarchy
+    * Parenthesis --> ()
+    * Counters --> * + ? {}
+    * Sequences and anchors
+    * Disjunction
+
+### Must read 2.1.3 and tables of operators of Speech and Language Processing
+
+# Extras
+* {NUMBER} --> Exact "NUMBER" number of occurences allowed. Not more, not less.
