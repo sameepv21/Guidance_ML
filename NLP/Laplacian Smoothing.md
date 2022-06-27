@@ -25,3 +25,9 @@
 * It is helpful as it turns product into summation and also removes the risk of numerical underflow where the value is so small to be stored on computer.
 * Now, for log ratio, the threashold shifts from 1 to 0.
     * This means that if a number (after calculating log likelihood) is greater than 0, then higher chance of positive tweet and vice versa.
+
+# Application of Naive Bayes
+* ![](/assets/images/2022-06-27-08-12-37.png)
+* Note that it assumes that the observations are independent.
+* However, this might not be the case. For ex. It is sunny and hot in sahara desert.
+* Sunny and hot usually are same. Hence, there is a dependence.
