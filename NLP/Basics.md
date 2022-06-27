@@ -72,3 +72,7 @@
     * Discovers different topics underlying a collection of documents.
     * How Does it find groups of related words?
         * See some youtube links
+
+# Extras
+* **Must look at hashing, locality sensitive hashing and how is it useful in case of NLP.**
+* Approximate Nearest neighbours.
