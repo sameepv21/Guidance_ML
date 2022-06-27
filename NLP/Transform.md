@@ -1,0 +1,8 @@
+# Introduction
+* This is a technique used for translating words from one language into another language.
+
+# Transforming Vectors
+* Basically we define a transformation matrix R such that XR = Y where X is inputs in one language and Y is corresponding output in another language.
+* To find R, we minimize the distance of XR and Y.
+* Froenium Norm
+    * ![](/assets/images/2022-06-27-21-38-45.png)
