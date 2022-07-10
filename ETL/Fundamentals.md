@@ -88,4 +88,3 @@
 
 # Extras
 * ETL has an intermediate storage facilty called staging areas.
-* 
