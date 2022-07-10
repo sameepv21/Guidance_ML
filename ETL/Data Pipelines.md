@@ -74,3 +74,20 @@
 * Useful when accuracy and speed both are concerned.
 * Only drawback is the logical complexity involved.
 
+# Tools and Technologies
+* Features observed in most
+    * Automation: Fully automated pipelines from extraction to loading
+    * Ease of use: Gives ETL rule recommendations.
+    * Drag and Drop Interfaces: No code rules and data flows.
+    * Transformation support: Assistance with complex calculations.
+    Security and Compliance: Data encryption and compliance with HIPAA and GDPR
+* Some tools
+    * Pandas, Vaex, Dask and Apache Spark (similar functionalities) (OS)
+    * Apache Airflow (OS)
+    * Talend Open Studio (OS)
+    * AWS Glue (Enterprise)
+    * Panoply (Enterprise)
+    * Alteryx (Enterprise)
+    * IBM Infosphere Datastage (Enterprise)
+    * IBM streams (Enterprise) (SDP)
+    * Apache Storm, SQLStream, Apache Samza, Apache Spark, Azure stream analytics, Apache Kafka
