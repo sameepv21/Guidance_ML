@@ -35,6 +35,12 @@
     * Versionable
     * Collaborative
     * Testable
+* Code components
+    * Library imports
+    * DAG arguments
+    * DAG Definition
+    * Task Definitions
+    * Task pipelines or dependencies.
 
 # Operator
 * Determine what each task does.
