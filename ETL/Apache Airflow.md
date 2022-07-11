@@ -46,3 +46,16 @@
 * Determine what each task does.
 * Hence, we can say that tasks implement operators.
 * Eg. Python operators, SQL quesries, sensor, emails, http requests etc.
+
+# Logs and Monitor
+* Default stored in local storage (when in development stage)
+* Also supports storage of logs on cloud (esp. when in production stage)
+* format - logs/dag_id/task_id/execution_date/try_number.log
+* Not only provides UI but also CLI.
+* 3 types of metrics for monitoring
+    * Counter: Metrics that always increase (like count of failures or success)
+    * Gauges: Metrics that may fluctuate (number of running tasks, BAG bag size or number of dags in production)
+    * Timers: Metric related to time duration (like time to finish a task)
+
+# Storage
+* Airflow metrics --> StatsD (network daemon that receives and forwards metrics) --> Prometheus (metrics monitoring and analyzing tool/system) --> Dashboad
